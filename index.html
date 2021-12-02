@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <title>당신의 플레이리스트</title>
+    <link rel="shortcut icon" type="image/x-icon" href="스몰로고.ico">
+    <script>
+        $(document).ready(function(){
+          var mySlider=$('.bxslider').bxSlider({
+            auto : true, //자동으로 애니메이션 시작
+            speed : 500, //애니메이션 속도
+            pause : 2500, //애니메이션 유지시간(1000 = 1초)
+            pager : true,
+            slideWidth: 800,
+            slideHeight: 1000,
+            slideMargin: 25,
+            responsive:true
+          });
+
+        });
+      </script>
+      <script>
+        function main() {
+          location.href = "index.html";
+        }
+      
+        function genre() {
+          location.href = "genre.html";
+        }
+      
+        function singer() {
+          location.href = "singer.html";
+        }
+      
+        function today() {
+          location.href = "today.html";
+        }
+      
+        function community() {
+          location.href = "community.html";
+        }
+      </script>
+</head>
+<body>
+    <div id="top" class="navbar">
+        <div class="navbar_logo" onclick="main()">
+            <i class="fa fa-backward" aria-hidden="true" onclick="main()"></i>
+            <i class="fa fa-pause" aria-hidden="true" onclick="main()"></i>
+            <i class="fa fa-forward" aria-hidden="true" onclick="main()"></i>
+            <a href="#" onclick="main()">올랑올랑<h6>:당신의 가슴을 두근거리게 할 플레이리스트</h6></a>
+        </div>
+        <ul class="navbar_menu">
+            <li><a href="#" onclick="genre()">장르별</a></li>
+            <li><a href="#" onclick="singer()">가수별</a></li>
+            <li><a href="#"onclick="today()">오늘의 처방</a></li>
+            <li><a href="#"onclick="community()">커뮤니티</a></li>
+        </ul>
+        <ul class="navbar_icons">
+            <li><a href="https://www.youtube.com/"><img src= "유튜브 로고.png" width="20" height="20"></a></li>
+            <li><a href="https://www.melon.com/"><img src= "멜론 로고.png" width="20" height="20"></a></li>
+        </ul>
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fa fa-bars" aria-hidden="true" ></i>
+    </a>
+</div>
+
+<div id="middle">
+<h3>♥당신만을 위한 플레이리스트, 올랑올랑♥</h3>
+<h6>올랑올랑이란? 가슴이 자꾸 두근거린다는 뜻의 순우리말</h6>
+    <ul class="bxslider">
+        <li>
+            <h2>#핫한 역주행곡 #군통령 #브레이브걸스</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MthLgPs7oU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3><b>Rollin'-브레이브걸스</b></h3>
+            <h4>발매: 2017.03.07.</h4>
+            <h4>장르: 댄스(국내)</h4>
+            <h4>작곡: 용감한 형제, 투챔프, 차쿤 </h4>
+            <h4>작사: 용감한 형제, 차쿤 </h4>
+            <h4>편곡: 투챔프 </h4>
+        </li>
+        <li>
+            <h2>#국힙 원탑 #아이유신곡 #라일락</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v7bnOxV4jAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3><b>아이유-라일락</b></h3>
+            <h4>발매: 2021.03.25.</h4>
+            <h4>장르: 댄스(국내)</h4>
+            <h4>작곡: 임수호, Dr.JO, 웅킴, N!ko </h4>
+            <h4>작사: 아이유(IU) </h4>
+            <h4>편곡: 임수호, 웅킴, N!ko </h4>
+          </li>
+        <li>
+            <h2>#봄 음원차트 불변의 1위 #벚꽃엔딩</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tXV7dfvSefo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3><b>벚꽃엔딩-버스커 버스커</b></h3>
+            <h4>발매: 2012.03.29.</h4>
+            <h4>장르: 록/포크(국내)</h4>
+            <h4>작곡: 장범준 </h4>
+            <h4>작사: 장범준 </h4>
+            <h4>편곡: 장범준, 배영준 </h4> 
+          </li>
+    </ul>
+</div>
+<div class="sidebar">
+  <table>
+    <thead>
+      <h6>음원차트 바로가기</h6>
+    </thead>
+    <tr>
+      <td>
+      <a href=" https://www.melon.com/chart/index.htm"><img src="멜론차트.PNG"></a>
+    </td>
+    </tr>
+    <tr>
+      <td>
+      <a href=" https://www.genie.co.kr/chart/top200"><img src="지니차트.PNG"></a>
+    </td>
+  </tr>
+    <tr>
+      <td>
+      <a href=" https://music.bugs.co.kr/chart"><img src="벅스 차트.PNG"></a>
+    </td>
+  </tr>
+  </table>
+</div>
+<div id="footer">
+  <h6>전체서비스|이용약관|개인정보처리방침|@유깽컴퍼니</h6>
+</div>
+</body>
+</html>
