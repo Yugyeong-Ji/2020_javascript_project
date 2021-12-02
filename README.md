@@ -1,2 +1,2 @@
-# 2020_javascript_project
+# javascript_project
 Web programming project
