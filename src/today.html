@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <title>당신의 플레이리스트</title>
+    <link rel="shortcut icon" type="image/x-icon" href="스몰로고.ico">
+
+      <script>
+        function main() {
+          location.href = "index.html";
+        }
+      
+        function genre() {
+          location.href = "genre.html";
+        }
+      
+        function singer() {
+          location.href = "singer.html";
+        }
+      
+        function today() {
+          location.href = "today.html";
+        }
+      
+        function community() {
+          location.href = "community.html";
+        }
+        function mood1() {
+          location.href = "mood1.html";
+        }
+        function mood2() {
+          location.href = "mood2.html";
+        }
+        function mood3() {
+          location.href = "mood3.html";
+        }
+      </script>
+      <style>
+        h2{text-align: center;}
+        h4{text-align: center;color:grey;}
+        h3{background-color: rgb(252, 233, 252);}
+      </style>
+</head>
+<body>
+    <nav id="top" class="navbar">
+        <div class="navbar_logo" onclick="main()">
+            <i class="fa fa-backward" aria-hidden="true"onclick="main()"></i>
+            <i class="fa fa-pause" aria-hidden="true"onclick="main()"></i>
+            <i class="fa fa-forward" aria-hidden="true"onclick="main()"></i>
+            <a href="#"onclick="main()">올랑올랑<h6>:당신의 가슴을 두근거리게 할 플레이리스트</h6></a>
+        </div>
+        <ul class="navbar_menu">
+            <li><a href="#" onclick="genre()">장르별</a></li>
+            <li><a href="#" onclick="singer()">가수별</a></li>
+            <li><a href="#"onclick="today()">오늘의 처방</a></li>
+            <li><a href="#"onclick="community()">커뮤니티</a></li>
+        </ul>
+        <ul class="navbar_icons">
+            <li><a href="https://www.youtube.com/"><img src= "유튜브 로고.png" width="20" height="20"></a></li>
+            <li><a href="https://www.melon.com/"><img src= "멜론 로고.png" width="20" height="20"></a></li>
+        </ul>
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fa fa-bars" aria-hidden="true" ></i>
+    </a>
+</nav>
+<body>
+<div id="middle">
+<h2>#오늘의 처방</h2>
+<h4>당신의 기분에 음악 처방을 내려드립니다.</h4>
+<b><h3>오늘 당신의 기분은?</h3></b>
+<div class="mood1" onclick="mood1()"><img src="smile.png"></a>
+<h4>설렘 가득하고 신나는 날</h4>
+</div>
+<hr>
+<div class="mood2" onclick="mood2()"><img src="따분.png"></a>
+<h4>따분하고 지루한 날</h4>
+</div>
+<hr>
+
+<div class="mood3" onclick="mood3()"><img src="우울.png"></a>
+<h4>우울하고 지치는 날</h4>
+</div>
+</div>
+<div class="sidebar">
+  <table>
+    <thead>
+      <h6>음원차트 바로가기</h6>
+    </thead>
+    <tr>
+      <td>
+      <a href=" https://www.melon.com/chart/index.htm"><img src="멜론차트.PNG"></a>
+    </td>
+    </tr>
+    <tr>
+      <td>
+      <a href=" https://www.genie.co.kr/chart/top200"><img src="지니차트.PNG"></a>
+    </td>
+  </tr>
+    <tr>
+      <td>
+      <a href=" https://music.bugs.co.kr/chart"><img src="벅스 차트.PNG"></a>
+    </td>
+  </tr>
+  </table>
+</div>
+</body>
+</html>
